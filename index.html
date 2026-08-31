@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Andreea Nistor builds reliable RPA workflows and practical AI agents for document automation.">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta property="og:title" content="Andreea Nistor | RPA & AI Agent Developer">
+  <meta property="og:description" content="Automation engineering, AI agents, and practical document intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andreea-nistor.github.io/">
+  <title>Andreea Nistor | RPA & AI Agent Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Andreea Nistor, home">AN<span>.</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">RPA developer / AI agent developer</p>
+        <div class="hero-identity">
+          <h1 id="hero-title">Andreea<br>Nistor</h1>
+          <img class="hero-avatar" src="https://avatars.githubusercontent.com/u/240137034?v=4" alt="Andreea Nistor's GitHub profile image" width="112" height="112">
+        </div>
+        <p class="hero-location"><i data-lucide="map-pin" aria-hidden="true"></i> Iasi, Romania</p>
+        <p class="hero-intro">I turn repetitive business processes and complex documents into reliable, measurable automation.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+          <a class="text-link" href="https://github.com/andreea-nistor" target="_blank" rel="noreferrer">GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-system reveal" aria-label="Automation workflow illustration">
+        <div class="system-label">How I work</div>
+        <div class="system-flow">
+          <div class="flow-node"><span>01</span>Understand</div>
+          <i data-lucide="arrow-right" aria-hidden="true"></i>
+          <div class="flow-node"><span>02</span>Automate</div>
+          <i data-lucide="arrow-right" aria-hidden="true"></i>
+          <div class="flow-node accent"><span>03</span>Measure</div>
+        </div>
+        <div class="system-note">
+          <span class="status-dot"></span>
+          Building practical systems with UiPath, Python, and LLMs
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#work" aria-label="Scroll to selected work">
+        <span>Selected work</span>
+        <i data-lucide="arrow-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section id="work" class="section selected-work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / Selected work</p>
+        <h2 id="work-title">Useful automation,<br>built to be understood.</h2>
+      </div>
+
+      <article class="featured-project reveal">
+        <div class="project-copy">
+          <div class="project-number">01</div>
+          <p class="project-kind">AI document intelligence</p>
+          <h3>AI DocuSearch</h3>
+          <p class="project-lede">A document-aware search and Q&amp;A application that grounds answers in uploaded PDFs, DOCX files, and text documents.</p>
+          <p>The pipeline combines extraction, OCR, chunking, semantic retrieval, and an OpenAI-compatible LLM. When embeddings are unavailable, it degrades gracefully to keyword retrieval instead of failing.</p>
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>Python</li>
+            <li>Streamlit</li>
+            <li>RAG</li>
+            <li>FAISS</li>
+            <li>LangSmith</li>
+            <li>Tesseract OCR</li>
+          </ul>
+          <div class="project-actions">
+            <a class="button button-primary" href="https://ai-docusearch.streamlit.app/" target="_blank" rel="noreferrer">Try live app <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="button button-secondary" href="https://github.com/andreea-nistor/AI-DocuSearch" target="_blank" rel="noreferrer">View source <i data-lucide="github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="app-preview" aria-label="Live preview of AI DocuSearch">
+          <div class="preview-bar">
+            <span></span><span></span><span></span>
+            <p>ai-docusearch.streamlit.app</p>
+          </div>
+          <iframe src="https://ai-docusearch.streamlit.app/?embed=true" title="AI DocuSearch live application" loading="lazy"></iframe>
+          <a class="preview-fallback" href="https://ai-docusearch.streamlit.app/" target="_blank" rel="noreferrer">Open the live application <i data-lucide="external-link" aria-hidden="true"></i></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="section experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Automation impact</p>
+        <h2 id="experience-title">Results from<br>real workflows.</h2>
+      </div>
+
+      <div class="case-study-list">
+        <article class="case-study reveal">
+          <p class="case-index">A</p>
+          <div>
+            <p class="project-kind">Monitoring &amp; incident automation</p>
+            <h3>Always-on business application monitoring</h3>
+            <p>Automated 24/7 monitoring for eight critical applications with UiPath and ServiceNow, reducing repetitive checks and accelerating incident visibility.</p>
+          </div>
+          <div class="metric"><strong>90%</strong><span>less manual monitoring</span></div>
+        </article>
+
+        <article class="case-study reveal">
+          <p class="case-index">B</p>
+          <div>
+            <p class="project-kind">VBA-integrated RPA</p>
+            <h3>Faster processing across bot operations</h3>
+            <p>Developed more than ten VBA solutions integrated with UiPath for over seventy bots, connecting spreadsheet workflows with resilient automation.</p>
+          </div>
+          <div class="metric"><strong>60%</strong><span>faster data processing</span></div>
+        </article>
+
+        <article class="case-study reveal">
+          <p class="case-index">C</p>
+          <div>
+            <p class="project-kind">Enterprise RPA delivery</p>
+            <h3>Automation delivered at operational scale</h3>
+            <p>Built and supported UiPath automations across orchestrated business processes, applying reusable patterns, production monitoring, and reliable exception handling.</p>
+          </div>
+          <div class="metric"><strong>100+</strong><span>bots deployed</span></div>
+        </article>
+
+        <article class="case-study reveal">
+          <p class="case-index">D</p>
+          <div>
+            <p class="project-kind">Operational alerting</p>
+            <h3>From automation failure to immediate action</h3>
+            <p>Integrated Twilio APIs into automation workflows to send real-time notifications, helping support teams respond quickly when monitored processes required attention.</p>
+          </div>
+          <div class="metric metric-word"><strong>Live</strong><span>Twilio API alerts</span></div>
+        </article>
+      </div>
+
+      <p class="confidentiality-note reveal"><i data-lucide="lock-keyhole" aria-hidden="true"></i> These professional case studies omit confidential implementation details and client data.</p>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="about-copy reveal">
+        <p class="eyebrow">03 / About</p>
+        <h2 id="about-title">Engineering with a process-first mindset.</h2>
+        <p class="about-lede">I am an automation engineer with three years of hands-on UiPath experience, expanding from enterprise RPA into AI agent development.</p>
+        <p>My work combines hands-on UiPath delivery with Python, retrieval-augmented generation, prompt engineering, and agentic frameworks. I care about systems that are observable, explainable, and useful beyond the demo.</p>
+
+        <div class="capabilities">
+          <div>
+            <h3>Automation</h3>
+            <p>UiPath Studio, Orchestrator, REFramework, VBA, ServiceNow, Twilio APIs</p>
+          </div>
+          <div>
+            <h3>AI &amp; engineering</h3>
+            <p>Python, RAG, LLM integration, LangGraph, LangSmith, MCP, Git</p>
+          </div>
+          <div>
+            <h3>Credentials</h3>
+            <p>UiPath Automation Developer Associate, Document Understanding, ITIL 4 Foundation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <p class="eyebrow reveal">04 / Contact</p>
+      <div class="contact-layout reveal">
+        <h2 id="contact-title">Let’s make the repetitive part disappear.</h2>
+        <div class="contact-links">
+          <a href="mailto:lazar87andreea@gmail.com">Email me <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/andreea-nistor-a1b03a148/" target="_blank" rel="noreferrer">LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://github.com/andreea-nistor" target="_blank" rel="noreferrer">GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Andreea Nistor</p>
+    <a href="#top">Back to top <i data-lucide="arrow-up" aria-hidden="true"></i></a>
+  </footer>
+</body>
+</html>
