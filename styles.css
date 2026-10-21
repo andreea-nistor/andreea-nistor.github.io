@@ -1,9 +1,9 @@
 :root {
-  --paper: #f4f1ea;
-  --paper-deep: #e8e3d9;
+  --paper: #e7f1f8;
+  --paper-deep: #d5e5f1;
   --ink: #14211d;
-  --muted: #5f6863;
-  --line: #c7c9c0;
+  --muted: #4d6270;
+  --line: #c3d4e1;
   --signal: #d74b32;
   --signal-dark: #a82d1d;
   --mint: #b8dbca;
@@ -135,7 +135,34 @@ img {
 
 .hero {
   position: relative;
-  padding: 154px max(24px, calc((100vw - 1180px) / 2)) 88px;
+  overflow: hidden;
+  padding: 154px max(24px, calc((100vw - 1180px) / 2)) 168px;
+  background:
+    radial-gradient(880px 420px at 8% 0%, rgba(255, 255, 255, 0.85), transparent 58%),
+    radial-gradient(720px 380px at 92% 18%, rgba(93, 147, 187, 0.28), transparent 62%),
+    linear-gradient(180deg, #f5fafd 0%, #d4e7f4 72%, #c3dced 100%);
+}
+
+.hero-copy,
+.chapter-links {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-waves {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.hero-waves svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-copy {
