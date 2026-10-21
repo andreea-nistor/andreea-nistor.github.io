@@ -2,7 +2,9 @@ const SCREEN_WIDTH = 600;
 const SCREEN_HEIGHT = 600;
 const STEP = 20;
 const WALL_LIMIT = 280;
-const TICK_MS = 100;
+const START_TICK_MS = 100;
+const MIN_TICK_MS = 50;
+const SPEED_UP_MS = 5;
 const HIGH_SCORE_KEY = "snake-high-score";
 
 const UP = 90;
@@ -36,6 +38,7 @@ let score = 0;
 let highScore = readHighScore();
 let running = false;
 let lastTick = 0;
+let tickMs = START_TICK_MS;
 
 function readHighScore() {
   try {
@@ -117,6 +120,7 @@ function hitTail() {
 
 function increaseScore() {
   score += 1;
+  tickMs = Math.max(MIN_TICK_MS, tickMs - SPEED_UP_MS);
 }
 
 function resetScore() {
@@ -125,6 +129,7 @@ function resetScore() {
     saveHighScore();
   }
   score = 0;
+  tickMs = START_TICK_MS;
 }
 
 function step() {
@@ -175,7 +180,7 @@ function frame(now) {
   if (!running) {
     return;
   }
-  if (now - lastTick >= TICK_MS) {
+  if (now - lastTick >= tickMs) {
     lastTick = now;
     step();
   }
