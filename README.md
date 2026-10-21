@@ -9,7 +9,7 @@ Open `index.html` in a browser. The site has no build step or package dependenci
 ## Publish on GitHub Pages
 
 1. Create a public GitHub repository named exactly `andreea-nistor.github.io`.
-2. Upload `index.html`, `styles.css`, and `script.js` to the repository root.
+2. Upload `index.html`, `styles.css`, `script.js`, and the `snake` folder to the repository root.
 3. Open the repository's **Settings > Pages**.
 4. Under **Build and deployment**, select **Deploy from a branch**.
 5. Select the `main` branch and `/ (root)`, then save.

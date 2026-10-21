@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  background: #111;
+  color: white;
+  font-family: Courier, monospace;
+}
+
+main {
+  box-sizing: border-box;
+  width: min(640px, 100%);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  color: white;
+  background: #222;
+  border: 1px solid #555;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button:not(:disabled):hover {
+  background: #333;
+}
+
+canvas {
+  width: min(600px, 100%, calc(100vh - 132px));
+  height: auto;
+  aspect-ratio: 1;
+  background: black;
+  display: block;
+}
+
+canvas:focus {
+  outline: 2px solid #555;
+}
